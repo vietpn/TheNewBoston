@@ -10,7 +10,7 @@ import android.widget.ListView;
 public class MenuActivity extends ListActivity {
 
 	String	classes[]	= { "StartingPointActivity", "TextPlayActivity",
-			"example2", "example3", "example4", "example5", "example6" };
+			"EmailActivity", "example3", "example4", "example5", "example6" };
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
