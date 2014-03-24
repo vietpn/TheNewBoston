@@ -8,5 +8,6 @@
     <string name="title_activity_splash">TheNewBoston</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_email">EmailActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
 
 </resources>

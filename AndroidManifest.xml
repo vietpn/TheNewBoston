@@ -18,6 +18,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,6 +27,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.STARTINGPOINT" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -34,6 +36,7 @@
             android:label="@string/title_activity_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MENU" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -44,6 +47,10 @@
         <activity
             android:name="com.thenewboston.travis.EmailActivity"
             android:label="@string/title_activity_email" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.CameraActivity"
+            android:label="@string/title_activity_camera" >
         </activity>
     </application>
 

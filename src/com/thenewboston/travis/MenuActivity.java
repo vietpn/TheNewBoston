@@ -9,14 +9,14 @@ import android.widget.ListView;
 
 public class MenuActivity extends ListActivity {
 
-	String	classes[]	= { "StartingPointActivity", "TextPlayActivity",
-			"EmailActivity", "example3", "example4", "example5", "example6" };
+	String	classes[]	= { "StartingPoint", "TextPlay",
+			"Email", "Camera", "example4", "example5", "example6" };
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
-		String cheese = classes[position];
+		String cheese = classes[position] + "Activity";
 		try {
 			Class ourClass = Class.forName("com.thenewboston.travis." + cheese);
 			Intent ourIntent = new Intent(this, ourClass);
