@@ -38,7 +38,7 @@ public class DataActivity extends Activity implements View.OnClickListener {
 			String bread = sendET.getText().toString();
 			Bundle basket = new Bundle();
 			basket.putString("key", bread);
-			Intent a = new Intent(DataActivity.this, OpenedClassActivity.class);
+			Intent a = new Intent(this, OpenedClassActivity.class);
 			a.putExtras(basket);
 			startActivity(a);
 			break;
