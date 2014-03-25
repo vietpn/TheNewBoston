@@ -7,10 +7,11 @@
     <uses-sdk
         android:minSdkVersion="2"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
     <application
         android:allowBackup="true"
@@ -54,8 +55,16 @@
         </activity>
         <activity
             android:name="com.thenewboston.travis.CameraActivity"
-            android:label="@string/title_activity_camera" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.DataActivity"
+            android:label="@string/title_activity_data" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.OpenedClassActivity"
+            android:label="@string/title_activity_opened_class" >
         </activity>
     </application>
 

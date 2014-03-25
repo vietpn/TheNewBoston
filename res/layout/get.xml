@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <EditText
         android:id="@+id/etSend"
@@ -12,21 +12,21 @@
         android:id="@+id/bSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/etSend"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/etSend"
-        android:text="StartActivity"
-        android:layout_alignRight="true" />
+        android:text="StartActivity" />
 
     <Button
         android:id="@+id/bSAFR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="StartActivityResult"
-        android:layout_toLeftOf="@id/bSA" />
+        android:layout_toLeftOf="@id/bSA"
+        android:layout_alignTop="@id/bSA"
+        android:text="StartActivityResult" />
 
     <TextView
         android:id="@+id/tvGot"
+        android:layout_below="@id/bSAFR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />

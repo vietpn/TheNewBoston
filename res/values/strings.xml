@@ -9,5 +9,7 @@
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_email">EmailActivity</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_data">DataActivity</string>
+    <string name="title_activity_opened_class">OpenedClassActivity</string>
 
 </resources>
