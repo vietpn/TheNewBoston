@@ -25,6 +25,7 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
+        public static final int aboutUs=0x7f08001e;
         public static final int action_settings=0x7f08001d;
         public static final int analogClock1=0x7f08000a;
         public static final int bAdd=0x7f08000c;
@@ -45,6 +46,7 @@ public final class R {
         public static final int etThings=0x7f080006;
         public static final int ibTabkePi=0x7f080001;
         public static final int ivReturnedPic=0x7f080000;
+        public static final int preferences=0x7f08001f;
         public static final int rBoth=0x7f08001a;
         public static final int rCrazay=0x7f080018;
         public static final int rSexy=0x7f080019;
@@ -67,12 +69,13 @@ public final class R {
     }
     public static final class menu {
         public static final int camera=0x7f070000;
-        public static final int data=0x7f070001;
-        public static final int email=0x7f070002;
-        public static final int main=0x7f070003;
-        public static final int menu=0x7f070004;
-        public static final int opened_class=0x7f070005;
-        public static final int splash=0x7f070006;
+        public static final int cool_menu=0x7f070001;
+        public static final int data=0x7f070002;
+        public static final int email=0x7f070003;
+        public static final int main=0x7f070004;
+        public static final int menu=0x7f070005;
+        public static final int opened_class=0x7f070006;
+        public static final int splash=0x7f070007;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;

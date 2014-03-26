@@ -2,7 +2,9 @@ package com.thenewboston.travis;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,9 +26,12 @@ public class OpenedClassActivity extends Activity implements OnClickListener,
 		setContentView(R.layout.send);
 		initialize();
 
-		Bundle gotBasket = getIntent().getExtras();
-		gotBread = gotBasket.getString("key");
-		question.setText(gotBread);
+		// get Intent
+		// Bundle gotBasket = getIntent().getExtras();
+		// gotBread = gotBasket.getString("key");
+		// question.setText(gotBread);
+
+		setData = test.getText().toString();
 	}
 
 	private void initialize() {
@@ -41,7 +46,22 @@ public class OpenedClassActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.bReturn:
+			// create new Intent
+			Intent person = new Intent();
+			Bundle backpack = new Bundle();
+			backpack.putString("answer", setData);
+			person.putExtras(backpack);
+			// set Result for intent person
+			setResult(RESULT_OK, person);
+			// close current activity
+			finish();
+			break;
 
+		default:
+			break;
+		}
 	}
 
 	@Override
@@ -55,9 +75,6 @@ public class OpenedClassActivity extends Activity implements OnClickListener,
 			break;
 		case R.id.rBoth:
 			setData = "Spot On!";
-			break;
-		default:
-			setData = "";
 			break;
 		}
 		test.setText(setData);
