@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -27,6 +28,21 @@ public class MenuActivity extends ListActivity {
 			e.printStackTrace();
 		}
 
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.aboutUs:
+			Intent i = new Intent("com.thenewboston.travis.AboutActivity");
+			startActivity(i);
+			break;
+
+		case R.id.preferences:
+			break;
+		}
+		return false;
+		
 	}
 
 	@Override

@@ -11,5 +11,6 @@
     <string name="title_activity_camera">CameraActivity</string>
     <string name="title_activity_data">DataActivity</string>
     <string name="title_activity_opened_class">OpenedClassActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
 
 </resources>
