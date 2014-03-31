@@ -13,19 +13,15 @@ import android.widget.ListView;
 
 public class MenuActivity extends ListActivity {
 
-	String	classes[]	= { "StartingPoint", "TextPlay", "Email", "Camera",
+	String classes[] = { "StartingPoint", "TextPlay", "Email", "Camera",
 			"Data", "example5", "example6", "example6", "example6" };
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
-		// set layout no title
-//		requestWindowFeature(Window.FEATURE_NO_TITLE);
-//		// set fullscreen layout
-//		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
-		String cheese = classes[position] + "Activity";		
+
+		String cheese = classes[position] + "Activity";
 		try {
 			Class ourClass = Class.forName("com.thenewboston.travis." + cheese);
 			Intent ourIntent = new Intent(this, ourClass);
@@ -43,21 +39,28 @@ public class MenuActivity extends ListActivity {
 			Intent about = new Intent("com.thenewboston.travis.AboutActivity");
 			startActivity(about);
 			break;
-			
+
 		case R.id.preferences:
 			Intent prefs = new Intent("com.thenewboston.travis.PrefsActivity");
 			startActivity(prefs);
 			break;
 		}
 		return false;
-		
+
 	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// set layout no title
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		// set fullscreen layout
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 		setListAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, classes));
+
 	}
 
 	@Override
