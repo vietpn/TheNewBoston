@@ -72,7 +72,17 @@
             android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
                 <action android:name="com.thenewboston.travis.AboutActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.PrefsActivity"
+            android:label="@string/title_activity_prefs" >
+            <intent-filter>
+                <action android:name="com.thenewboston.travis.PrefsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

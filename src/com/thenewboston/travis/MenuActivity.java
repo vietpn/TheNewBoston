@@ -34,11 +34,13 @@ public class MenuActivity extends ListActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.aboutUs:
-			Intent i = new Intent("com.thenewboston.travis.AboutActivity");
-			startActivity(i);
+			Intent about = new Intent("com.thenewboston.travis.AboutActivity");
+			startActivity(about);
 			break;
-
+			
 		case R.id.preferences:
+			Intent prefs = new Intent("com.thenewboston.travis.PrefsActivity");
+			startActivity(prefs);
 			break;
 		}
 		return false;

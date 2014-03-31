@@ -12,5 +12,6 @@
     <string name="title_activity_data">DataActivity</string>
     <string name="title_activity_opened_class">OpenedClassActivity</string>
     <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_prefs">PrefsActivity</string>
 
 </resources>

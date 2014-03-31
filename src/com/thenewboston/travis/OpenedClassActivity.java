@@ -1,8 +1,10 @@
 package com.thenewboston.travis;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
 import android.util.Log;
 import android.view.Menu;
@@ -25,13 +27,16 @@ public class OpenedClassActivity extends Activity implements OnClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send);
 		initialize();
-
-		// get Intent
-		// Bundle gotBasket = getIntent().getExtras();
-		// gotBread = gotBasket.getString("key");
-		// question.setText(gotBread);
-
-		setData = test.getText().toString();
+		
+		// get data from Preference
+		SharedPreferences getData = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		// name: name, default: Travis is...
+		String et = getData.getString("name", "Travis is...");
+		// name: list, default: 4
+		String value = getData.getString("list", "4");
+		if(value.contentEquals("1")){
+			question.setText(et);
+		}
 	}
 
 	private void initialize() {
