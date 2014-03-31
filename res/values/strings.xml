@@ -13,5 +13,6 @@
     <string name="title_activity_opened_class">OpenedClassActivity</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_prefs">PrefsActivity</string>
+    <string name="title_activity_slider">SliderActivity</string>
 
 </resources>
