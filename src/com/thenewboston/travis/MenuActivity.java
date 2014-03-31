@@ -3,10 +3,11 @@ package com.thenewboston.travis;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -19,7 +20,12 @@ public class MenuActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
-		String cheese = classes[position] + "Activity";
+		// set layout no title
+//		requestWindowFeature(Window.FEATURE_NO_TITLE);
+//		// set fullscreen layout
+//		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
+		String cheese = classes[position] + "Activity";		
 		try {
 			Class ourClass = Class.forName("com.thenewboston.travis." + cheese);
 			Intent ourIntent = new Intent(this, ourClass);
