@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenewboston.travis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="2"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.thenewboston.travis.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.StartingPointActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.TextPlayActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.EmailActivity"
+            android:label="@string/title_activity_email" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.DataActivity"
+            android:label="@string/title_activity_data" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.OpenedClassActivity"
+            android:label="@string/title_activity_opened_class" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.MenuActivity"
+            android:label="@string/title_activity_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.thenewboston.travis.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.PrefsActivity"
+            android:label="@string/title_activity_prefs" >
+            <intent-filter>
+                <action android:name="com.thenewboston.travis.PrefsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.SliderActivity"
+            android:label="@string/title_activity_slider" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+    </application>
+
+</manifest>
