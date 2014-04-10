@@ -15,5 +15,7 @@
     <string name="title_activity_prefs">PrefsActivity</string>
     <string name="title_activity_slider">SliderActivity</string>
     <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_simple_browser">SimpleBrowserActivity</string>
+    <string name="title_activity_shared_prefs">SharedPrefsActivity</string>
 
 </resources>

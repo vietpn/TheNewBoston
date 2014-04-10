@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -92,6 +93,14 @@
         <activity
             android:name="com.thenewboston.travis.TabsActivity"
             android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.SimpleBrowserActivity"
+            android:label="@string/title_activity_simple_browser" >
+        </activity>
+        <activity
+            android:name="com.thenewboston.travis.SharedPrefsActivity"
+            android:label="@string/title_activity_shared_prefs" >
         </activity>
     </application>
 
