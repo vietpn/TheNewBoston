@@ -99,15 +99,16 @@ public final class R {
         public static final int activity_about=0x7f030000;
         public static final int activity_camera=0x7f030001;
         public static final int activity_email=0x7f030002;
-        public static final int activity_shared_prefs=0x7f030003;
-        public static final int activity_simple_browser=0x7f030004;
-        public static final int activity_slider=0x7f030005;
-        public static final int activity_splash=0x7f030006;
-        public static final int activity_starting_point=0x7f030007;
-        public static final int activity_tabs=0x7f030008;
-        public static final int activity_text=0x7f030009;
-        public static final int get=0x7f03000a;
-        public static final int send=0x7f03000b;
+        public static final int activity_internal_data=0x7f030003;
+        public static final int activity_shared_prefs=0x7f030004;
+        public static final int activity_simple_browser=0x7f030005;
+        public static final int activity_slider=0x7f030006;
+        public static final int activity_splash=0x7f030007;
+        public static final int activity_starting_point=0x7f030008;
+        public static final int activity_tabs=0x7f030009;
+        public static final int activity_text=0x7f03000a;
+        public static final int get=0x7f03000b;
+        public static final int send=0x7f03000c;
     }
     public static final class menu {
         public static final int about=0x7f090000;
@@ -115,15 +116,16 @@ public final class R {
         public static final int cool_menu=0x7f090002;
         public static final int data=0x7f090003;
         public static final int email=0x7f090004;
-        public static final int main=0x7f090005;
-        public static final int menu=0x7f090006;
-        public static final int opened_class=0x7f090007;
-        public static final int prefs=0x7f090008;
-        public static final int shared_prefs=0x7f090009;
-        public static final int simple_browser=0x7f09000a;
-        public static final int slider=0x7f09000b;
-        public static final int splash=0x7f09000c;
-        public static final int tabs=0x7f09000d;
+        public static final int internal_data=0x7f090005;
+        public static final int main=0x7f090006;
+        public static final int menu=0x7f090007;
+        public static final int opened_class=0x7f090008;
+        public static final int prefs=0x7f090009;
+        public static final int shared_prefs=0x7f09000a;
+        public static final int simple_browser=0x7f09000b;
+        public static final int slider=0x7f09000c;
+        public static final int splash=0x7f09000d;
+        public static final int tabs=0x7f09000e;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
@@ -134,6 +136,7 @@ public final class R {
         public static final int title_activity_camera=0x7f070007;
         public static final int title_activity_data=0x7f070008;
         public static final int title_activity_email=0x7f070006;
+        public static final int title_activity_internal_data=0x7f070010;
         public static final int title_activity_menu=0x7f070005;
         public static final int title_activity_opened_class=0x7f070009;
         public static final int title_activity_prefs=0x7f07000b;

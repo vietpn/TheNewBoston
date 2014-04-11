@@ -102,6 +102,10 @@
             android:name="com.thenewboston.travis.SharedPrefsActivity"
             android:label="@string/title_activity_shared_prefs" >
         </activity>
+        <activity
+            android:name="com.thenewboston.travis.InternalDataActivity"
+            android:label="@string/title_activity_internal_data" >
+        </activity>
     </application>
 
 </manifest>

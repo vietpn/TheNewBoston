@@ -17,5 +17,6 @@
     <string name="title_activity_tabs">TabsActivity</string>
     <string name="title_activity_simple_browser">SimpleBrowserActivity</string>
     <string name="title_activity_shared_prefs">SharedPrefsActivity</string>
+    <string name="title_activity_internal_data">InternalDataActivity</string>
 
 </resources>
